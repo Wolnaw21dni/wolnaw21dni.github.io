@@ -3,11 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>
-Wolna w 21 dni - Jak wyjść z toksycznego związku i odzyskać siebie</title>
+  <title>Wolna w 21 dni - Jak wyjść z toksycznego związku i odzyskać siebie</title>
+  
   <!-- Favicon -->
-<link rel="icon" href="/favicon.png?v=1" type="image/png" sizes="any">
-<link rel="shortcut icon" href="/favicon.png?v=1" type="image/png">
+  <link rel="icon" href="/favicon.png?v=1" type="image/png" sizes="any">
+  <link rel="shortcut icon" href="/favicon.png?v=1" type="image/png">
+  
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
   <style>
     * {
@@ -63,39 +64,54 @@ Wolna w 21 dni - Jak wyjść z toksycznego związku i odzyskać siebie</title>
       z-index: 1;
     }
 
+    .logo {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 30px;
+      letter-spacing: 2px;
+      opacity: 0.95;
+    }
+
     .hero h1 {
-      font-size: 3.2rem;
+      font-size: 2.8rem;
       margin-bottom: 25px;
-      line-height: 1.2;
+      line-height: 1.3;
       font-weight: 700;
       letter-spacing: -0.5px;
       text-shadow: 0px 2px 8px rgba(0,0,0,0.1);
     }
 
+    .hero h2 {
+      font-size: 1.5rem;
+      margin-bottom: 25px;
+      font-weight: 600;
+      line-height: 1.4;
+      opacity: 0.95;
+    }
+
     .hero p {
-      font-size: 1.35rem;
-      margin-bottom: 40px;
+      font-size: 1.2rem;
+      margin-bottom: 30px;
       font-weight: 500;
-      text-shadow: 0px 1px 4px rgba(0,0,0,0.1);
+      line-height: 1.7;
     }
 
     .quote-section {
       background-color: rgba(255, 255, 255, 0.2);
-      padding: 30px;
+      padding: 25px;
       border-radius: 15px;
-      margin: 35px auto 45px;
-      max-width: 650px;
+      margin: 30px auto 40px;
+      max-width: 700px;
       backdrop-filter: blur(10px);
       box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
     }
 
     .quote-section p {
-      font-style: italic;
-      font-size: 1.3rem;
+      font-size: 1.1rem;
       margin: 0;
       color: #FFFFFF;
       font-weight: 500;
-      letter-spacing: 0.8px;
+      line-height: 1.7;
     }
 
     .cta-button {
@@ -110,12 +126,70 @@ Wolna w 21 dni - Jak wyjść z toksycznego związku i odzyskać siebie</title>
       transition: all 0.4s ease;
       box-shadow: 0px 4px 10px rgba(184, 148, 73, 0.4);
       letter-spacing: 1px;
+      margin-top: 15px;
     }
 
     .cta-button:hover {
       background-color: #A47E3B;
       transform: translateY(-3px) scale(1.02);
       box-shadow: 0px 8px 20px rgba(164, 126, 59, 0.5);
+    }
+
+    /* Safety Section */
+    .safety-box {
+      background: white;
+      padding: 35px;
+      border-radius: 15px;
+      border-left: 5px solid #C26A77;
+      box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+      max-width: 800px;
+      margin: -50px auto 60px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .safety-box h3 {
+      color: #C26A77;
+      margin-bottom: 20px;
+      font-size: 1.4rem;
+      font-weight: 700;
+    }
+
+    .safety-box p {
+      color: #2A2A2A;
+      margin-bottom: 15px;
+      line-height: 1.8;
+    }
+
+    .safety-box a {
+      color: #B89449;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .safety-box a:hover {
+      text-decoration: underline;
+    }
+
+    .safety-contacts {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .safety-contact {
+      background: #FFF7F2;
+      padding: 15px;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .safety-contact strong {
+      display: block;
+      color: #C26A77;
+      font-size: 1.3rem;
+      margin-bottom: 5px;
     }
 
     /* Section Separator */
@@ -127,13 +201,79 @@ Wolna w 21 dni - Jak wyjść z toksycznego związku i odzyskać siebie</title>
       border-radius: 2px;
     }
 
-    /* Benefits Section */
-    .benefits {
-      padding: 100px 20px;
+    /* Intro Section */
+    .intro {
+      padding: 80px 20px;
       background: linear-gradient(to bottom, #FFF7F2 0%, #FCEAE6 100%);
     }
 
-    .benefits h2 {
+    .intro-content {
+      max-width: 850px;
+      margin: 0 auto;
+    }
+
+    .intro h2 {
+      font-size: 2.2rem;
+      color: #C26A77;
+      margin-bottom: 25px;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    .intro p {
+      color: #2A2A2A;
+      margin-bottom: 20px;
+      line-height: 1.9;
+      font-size: 1.1rem;
+    }
+
+    /* Problems Section */
+    .problems {
+      padding: 80px 20px;
+      background: white;
+    }
+
+    .problems h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      color: #C26A77;
+      margin-bottom: 20px;
+      font-weight: 700;
+    }
+
+    .problems-list {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0;
+      list-style: none;
+    }
+
+    .problems-list li {
+      padding: 20px 20px 20px 50px;
+      margin-bottom: 15px;
+      background: #FFF7F2;
+      border-radius: 10px;
+      position: relative;
+      line-height: 1.8;
+      font-size: 1.05rem;
+    }
+
+    .problems-list li:before {
+      content: '✗';
+      position: absolute;
+      left: 20px;
+      color: #C26A77;
+      font-size: 1.3rem;
+      font-weight: 700;
+    }
+
+    /* System Section */
+    .system {
+      padding: 100px 20px;
+      background: linear-gradient(to bottom, #FCEAE6 0%, #FFF7F2 100%);
+    }
+
+    .system h2 {
       text-align: center;
       font-size: 2.8rem;
       color: #C26A77;
@@ -141,7 +281,16 @@ Wolna w 21 dni - Jak wyjść z toksycznego związku i odzyskać siebie</title>
       font-weight: 700;
     }
 
-    .benefits-grid {
+    .system-intro {
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto 50px;
+      font-size: 1.15rem;
+      color: #2A2A2A;
+      line-height: 1.8;
+    }
+
+    .phases {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 35px;
@@ -149,42 +298,92 @@ Wolna w 21 dni - Jak wyjść z toksycznego związku i odzyskać siebie</title>
       margin: 0 auto;
     }
 
-    .benefit-item {
+    .phase {
+      background: white;
       padding: 40px;
-      background-color: white;
       border-radius: 20px;
-      border-top: 5px solid #6D7A59;
-      transition: all 0.4s ease;
       box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+      transition: all 0.4s ease;
     }
 
-    .benefit-item:hover {
-      transform: translateY(-8px) scale(1.02);
+    .phase:hover {
+      transform: translateY(-8px);
       box-shadow: 0px 8px 25px rgba(194, 106, 119, 0.25);
     }
 
-    .benefit-item h3 {
+    .phase-icon {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    .phase h3 {
       color: #6D7A59;
       margin-bottom: 18px;
-      font-size: 1.45rem;
+      font-size: 1.5rem;
       font-weight: 700;
     }
 
-    .benefit-item p {
+    .phase p {
       color: #2A2A2A;
       line-height: 1.8;
-      font-weight: 500;
     }
 
-    /* Bonuses Section */
-    .bonuses {
+    /* Timeline Section */
+    .timeline {
+      padding: 80px 20px;
+      background: white;
+    }
+
+    .timeline h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      color: #C26A77;
+      margin-bottom: 20px;
+      font-weight: 700;
+    }
+
+    .timeline-content {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .timeline-content p {
+      color: #2A2A2A;
+      margin-bottom: 15px;
+      line-height: 1.9;
+      font-size: 1.05rem;
+    }
+
+    .timeline-content ul {
+      list-style: none;
+      padding-left: 0;
+      margin: 20px 0;
+    }
+
+    .timeline-content li {
+      padding: 12px 12px 12px 35px;
+      margin-bottom: 10px;
+      position: relative;
+      line-height: 1.8;
+    }
+
+    .timeline-content li:before {
+      content: '✓';
+      position: absolute;
+      left: 8px;
+      color: #6D7A59;
+      font-weight: 700;
+      font-size: 1.2rem;
+    }
+
+    /* Testimonials Section */
+    .testimonials {
       padding: 100px 20px;
       background: linear-gradient(135deg, #C26A77 0%, #B6A1C7 100%);
       color: white;
-      box-shadow: 0px 8px 20px rgba(0,0,0,0.15);
     }
 
-    .bonuses h2 {
+    .testimonials h2 {
       text-align: center;
       font-size: 2.8rem;
       color: #FFFFFF;
@@ -193,127 +392,48 @@ Wolna w 21 dni - Jak wyjść z toksycznego związku i odzyskać siebie</title>
       text-shadow: 0px 2px 8px rgba(0,0,0,0.1);
     }
 
-    .bonuses-subtitle {
-      text-align: center;
-      font-size: 1.25rem;
-      color: #FFFFFF;
-      margin-bottom: 60px;
-      font-weight: 500;
-    }
-
-    .bonus-item {
-      background: rgba(255, 255, 255, 0.95);
-      padding: 45px;
-      margin-bottom: 30px;
-      border-radius: 20px;
-      box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
-      max-width: 850px;
-      margin-left: auto;
-      margin-right: auto;
-      border-left: 6px solid #B89449;
-      transition: all 0.4s ease;
-    }
-
-    .bonus-item:hover {
-      transform: translateY(-5px) scale(1.01);
-      box-shadow: 0px 8px 25px rgba(0,0,0,0.2);
-    }
-
-    .bonus-item h3 {
-      color: #C26A77;
-      margin-bottom: 18px;
-      font-size: 1.6rem;
-      font-weight: 700;
-    }
-
-    .bonus-item p {
-      color: #2A2A2A;
-      line-height: 1.8;
-      font-weight: 500;
-    }
-
-    .bonus-value {
-      display: inline-block;
-      background-color: #B89449;
-      color: white;
-      padding: 10px 24px;
-      border-radius: 25px;
-      font-size: 0.95rem;
-      margin-bottom: 18px;
-      font-weight: 600;
-      box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
-    }
-
-    /* Testimonials Section */
-    .testimonials {
-      padding: 100px 20px;
-      background: linear-gradient(to bottom, #FFF7F2 0%, #FCEAE6 100%);
-    }
-
-    .testimonials h2 {
-      text-align: center;
-      font-size: 2.8rem;
-      color: #C26A77;
-      margin-bottom: 20px;
-      font-weight: 700;
-    }
-
     .testimonials-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      gap: 35px;
-      max-width: 1150px;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      max-width: 1100px;
       margin: 0 auto;
     }
 
     .testimonial-item {
-      background: white;
-      padding: 45px;
-      border-radius: 20px;
-      box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
-      border-top: 4px solid #B6A1C7;
+      background: rgba(255, 255, 255, 0.95);
+      padding: 35px;
+      border-radius: 15px;
+      box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
       transition: all 0.4s ease;
     }
 
     .testimonial-item:hover {
       transform: translateY(-5px) scale(1.01);
-      box-shadow: 0px 8px 25px rgba(182, 161, 199, 0.3);
+      box-shadow: 0px 8px 25px rgba(0,0,0,0.2);
     }
 
     .testimonial-text {
       font-style: italic;
       color: #2A2A2A;
-      margin-bottom: 28px;
-      line-height: 1.9;
+      margin-bottom: 20px;
+      line-height: 1.8;
       font-weight: 500;
     }
 
     .testimonial-author {
       font-weight: 600;
       color: #C26A77;
-      font-size: 1.15rem;
+      font-size: 1.1rem;
     }
 
-    .testimonial-role {
-      color: #6D7A59;
-      font-size: 1rem;
-      margin-top: 6px;
-      font-weight: 500;
-    }
-
-    .stars {
-      color: #B89449;
-      margin-bottom: 22px;
-      font-size: 1.3rem;
-    }
-
-    /* FAQ Section */
-    .faq {
+    /* What's Inside Section */
+    .whats-inside {
       padding: 100px 20px;
-      background: linear-gradient(to bottom, #FCEAE6 0%, #FFF7F2 100%);
+      background: linear-gradient(to bottom, #FFF7F2 0%, #FCEAE6 100%);
     }
 
-    .faq h2 {
+    .whats-inside h2 {
       text-align: center;
       font-size: 2.8rem;
       color: #C26A77;
@@ -321,58 +441,339 @@ Wolna w 21 dni - Jak wyjść z toksycznego związku i odzyskać siebie</title>
       font-weight: 700;
     }
 
-    .faq-container {
-      max-width: 850px;
-      margin: 0 auto;
+    .whats-inside-intro {
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto 50px;
+      font-size: 1.15rem;
+      color: #2A2A2A;
     }
 
-    .faq-item {
-      background-color: white;
-      margin-bottom: 25px;
-      border-radius: 15px;
-      overflow: hidden;
-      box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
-      border-left: 5px solid #6D7A59;
+    .inside-list {
+      max-width: 900px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+      gap: 20px;
+    }
+
+    .inside-item {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      border-left: 4px solid #6D7A59;
+      box-shadow: 0px 3px 8px rgba(0,0,0,0.08);
       transition: all 0.3s ease;
     }
 
-    .faq-item:hover {
-      box-shadow: 0px 6px 18px rgba(0,0,0,0.15);
+    .inside-item:hover {
+      transform: translateX(5px);
+      box-shadow: 0px 5px 15px rgba(0,0,0,0.12);
     }
 
-    .faq-question {
-      padding: 32px;
-      font-weight: 600;
-      color: #1F1F1F;
-      font-size: 1.2rem;
-      cursor: pointer;
-      position: relative;
-    }
-
-    .faq-question:after {
-      content: '+';
-      position: absolute;
-      right: 32px;
-      font-size: 2rem;
-      color: #C26A77;
-      font-weight: 600;
-    }
-
-    .faq-answer {
-      padding: 0 32px 32px 32px;
+    .inside-item p {
       color: #2A2A2A;
-      line-height: 1.9;
-      font-weight: 500;
+      line-height: 1.7;
+      margin: 0;
     }
 
-    /* Final CTA Section */
+    /* Privacy Section */
+    .privacy {
+      padding: 80px 20px;
+      background: white;
+    }
+
+    .privacy h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      color: #C26A77;
+      margin-bottom: 20px;
+      font-weight: 700;
+    }
+
+    .privacy-content {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .privacy-content p {
+      color: #2A2A2A;
+      margin-bottom: 15px;
+      line-height: 1.9;
+      font-size: 1.05rem;
+    }
+
+    .privacy-content ul {
+      list-style: none;
+      padding-left: 0;
+      margin: 20px 0;
+    }
+
+    .privacy-content li {
+      padding: 12px 12px 12px 35px;
+      margin-bottom: 10px;
+      position: relative;
+      line-height: 1.8;
+      background: #FFF7F2;
+      border-radius: 8px;
+    }
+
+    .privacy-content li:before {
+      content: '🔒';
+      position: absolute;
+      left: 10px;
+      font-size: 1.1rem;
+    }
+
+    /* Why Now Section */
+    .why-now {
+      padding: 80px 20px;
+      background: linear-gradient(to bottom, #FCEAE6 0%, #FFF7F2 100%);
+    }
+
+    .why-now h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      color: #C26A77;
+      margin-bottom: 20px;
+      font-weight: 700;
+    }
+
+    .why-now-content {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .why-now-content p {
+      color: #2A2A2A;
+      margin-bottom: 20px;
+      line-height: 1.9;
+      font-size: 1.1rem;
+    }
+
+    .why-now-content ul {
+      list-style: none;
+      padding-left: 0;
+      margin: 25px 0;
+    }
+
+    .why-now-content li {
+      padding: 15px 15px 15px 40px;
+      margin-bottom: 12px;
+      position: relative;
+      line-height: 1.8;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0px 2px 8px rgba(0,0,0,0.05);
+    }
+
+    .why-now-content li:before {
+      content: '→';
+      position: absolute;
+      left: 15px;
+      color: #6D7A59;
+      font-weight: 700;
+      font-size: 1.3rem;
+    }
+
+    /* Pricing Section */
+    .pricing {
+      padding: 100px 20px;
+      background: linear-gradient(135deg, #C26A77 0%, #B6A1C7 100%);
+      color: white;
+      text-align: center;
+    }
+
+    .pricing h2 {
+      font-size: 2.8rem;
+      margin-bottom: 20px;
+      font-weight: 700;
+      text-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .pricing-intro {
+      font-size: 1.2rem;
+      margin-bottom: 40px;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .price-box {
+      background: rgba(255, 255, 255, 0.95);
+      padding: 50px;
+      border-radius: 20px;
+      max-width: 600px;
+      margin: 0 auto 40px;
+      box-shadow: 0px 8px 25px rgba(0,0,0,0.2);
+    }
+
+    .old-price {
+      font-size: 2rem;
+      color: #999;
+      text-decoration: line-through;
+      margin-bottom: 10px;
+    }
+
+    .new-price {
+      font-size: 4rem;
+      color: #C26A77;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .timer-warning {
+      background: #B89449;
+      color: white;
+      padding: 15px 25px;
+      border-radius: 10px;
+      font-weight: 600;
+      margin: 30px auto;
+      max-width: 500px;
+      font-size: 1.1rem;
+    }
+
+    #countdown {
+      font-size: 1.3rem;
+      font-weight: 700;
+      margin-top: 10px;
+    }
+
+    .guarantee {
+      margin-top: 30px;
+      font-size: 1.05rem;
+      line-height: 1.8;
+    }
+
+    /* For Whom Section */
+    .for-whom {
+      padding: 80px 20px;
+      background: white;
+    }
+
+    .for-whom h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      color: #C26A77;
+      margin-bottom: 50px;
+      font-weight: 700;
+    }
+
+    .for-whom-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+      gap: 40px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .for-whom-box {
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .for-yes {
+      background: linear-gradient(135deg, #6D7A59 0%, #7E8D6B 100%);
+      color: white;
+    }
+
+    .for-no {
+      background: #F5F5F5;
+      color: #2A2A2A;
+    }
+
+    .for-whom-box h3 {
+      font-size: 1.8rem;
+      margin-bottom: 25px;
+      font-weight: 700;
+    }
+
+    .for-whom-box ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .for-whom-box li {
+      padding: 12px 0 12px 35px;
+      margin-bottom: 12px;
+      position: relative;
+      line-height: 1.7;
+    }
+
+    .for-yes li:before {
+      content: '✓';
+      position: absolute;
+      left: 5px;
+      color: white;
+      font-weight: 700;
+      font-size: 1.3rem;
+    }
+
+    .for-no li:before {
+      content: '✗';
+      position: absolute;
+      left: 5px;
+      color: #C26A77;
+      font-weight: 700;
+      font-size: 1.3rem;
+    }
+
+    /* Future Section */
+    .future {
+      padding: 80px 20px;
+      background: linear-gradient(to bottom, #FFF7F2 0%, #FCEAE6 100%);
+    }
+
+    .future h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      color: #C26A77;
+      margin-bottom: 40px;
+      font-weight: 700;
+    }
+
+    .scenarios {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 35px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .scenario {
+      background: white;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .scenario h3 {
+      font-size: 1.6rem;
+      margin-bottom: 20px;
+      font-weight: 700;
+    }
+
+    .scenario-1 h3 {
+      color: #999;
+    }
+
+    .scenario-2 h3 {
+      color: #6D7A59;
+    }
+
+    .scenario p {
+      color: #2A2A2A;
+      line-height: 1.8;
+      font-size: 1.05rem;
+    }
+
+    /* Final CTA */
     .final-cta {
       padding: 100px 20px;
       background: linear-gradient(135deg, #C26A77 0%, #B6A1C7 100%);
       color: white;
       text-align: center;
-      position: relative;
-      box-shadow: 0px 8px 20px rgba(0,0,0,0.15);
     }
 
     .final-cta h2 {
@@ -383,23 +784,30 @@ Wolna w 21 dni - Jak wyjść z toksycznego związku i odzyskać siebie</title>
     }
 
     .final-cta p {
-      font-size: 1.3rem;
-      margin-bottom: 35px;
-      font-weight: 500;
+      font-size: 1.25rem;
+      margin-bottom: 30px;
+      line-height: 1.7;
     }
 
-    .price {
-      font-size: 3.8rem;
-      font-weight: 700;
-      margin: 30px 0;
-      letter-spacing: -1px;
-      text-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+    .cta-features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      max-width: 900px;
+      margin: 40px auto;
     }
 
-    .price-note {
-      font-size: 1.05rem;
-      margin-bottom: 40px;
-      font-weight: 500;
+    .cta-feature {
+      background: rgba(255, 255, 255, 0.15);
+      padding: 20px;
+      border-radius: 12px;
+      backdrop-filter: blur(10px);
+    }
+
+    .cta-feature strong {
+      display: block;
+      font-size: 1.1rem;
+      margin-bottom: 5px;
     }
 
     /* Footer */
@@ -412,39 +820,53 @@ Wolna w 21 dni - Jak wyjść z toksycznego związku i odzyskać siebie</title>
 
     footer p {
       font-weight: 500;
+      line-height: 1.8;
+    }
+
+    footer .disclaimer {
+      margin-top: 20px;
+      font-size: 0.9rem;
+      opacity: 0.8;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     /* Responsive Design */
     @media (max-width: 768px) {
       .hero h1 {
-        font-size: 2.2rem;
+        font-size: 2rem;
+      }
+
+      .hero h2 {
+        font-size: 1.2rem;
       }
 
       .hero p {
-        font-size: 1.15rem;
+        font-size: 1rem;
       }
 
       .cta-button {
-        padding: 16px 45px;
-        font-size: 1.15rem;
+        padding: 16px 40px;
+        font-size: 1.1rem;
       }
 
-      .benefits h2,
-      .bonuses h2,
-      .testimonials h2,
-      .faq h2,
-      .final-cta h2 {
-        font-size: 2.2rem;
+      h2 {
+        font-size: 2rem !important;
       }
 
-      .price {
+      .new-price {
         font-size: 3rem;
       }
 
-      .benefit-item,
-      .bonus-item,
-      .testimonial-item {
-        padding: 32px;
+      .inside-list,
+      .for-whom-grid,
+      .scenarios {
+        grid-template-columns: 1fr;
+      }
+
+      .safety-contacts {
+        grid-template-columns: 1fr;
       }
     }
   </style>
@@ -453,169 +875,403 @@ Wolna w 21 dni - Jak wyjść z toksycznego związku i odzyskać siebie</title>
   <!-- Hero Section -->
   <section class="hero">
     <div class="container hero-content">
-      <div style="font-size: 1.1rem; font-weight: 600; margin-bottom: 30px; letter-spacing: 2px; opacity: 0.95;">wolnaw21dni.pl</div>
-      <h1>Wolna w 21 dni</h1>
-      <p>Jak wyjść z toksycznego związku i odzyskać siebie</p>
+      <div class="logo">wolnaw21dni.pl</div>
+      <h1>Po 3 latach w trudnej relacji, w końcu mówię wprost…</h1>
+      <h2>Jak odzyskałam spokój i sprawczość w 21 dni dzięki systemowi, który pomaga kobietom bezpiecznie wyjść z toksycznych układów</h2>
       <div class="quote-section">
-        <p>"Twoja wolność zaczyna się, gdy wybierasz siebie."</p>
+        <p>Bez kontaktu z osobą, która przekracza granice. Bez narażania bezpieczeństwa. I bez pozostawania samej sobie w najtrudniejszym momencie.</p>
       </div>
-      <a href="#oferta" class="cta-button">Pobierz e-book za 47 zł</a>
+      <a href="#oferta" class="cta-button" aria-label="Zamów System 21 Dni za 47 złotych">Zamów teraz — 47 zł</a>
     </div>
   </section>
 
-  <!-- Benefits Section -->
-  <section class="benefits">
+  <!-- Safety Box -->
+  <section class="intro">
     <div class="container">
-      <h2>Co znajdziesz w tym e-booku?</h2>
+      <div class="safety-box">
+        <h3>❤️ Najpierw Twoje bezpieczeństwo</h3>
+        <p><strong>Jeśli jesteś w bezpośrednim zagrożeniu:</strong></p>
+        <div class="safety-contacts">
+          <div class="safety-contact">
+            <strong>112</strong>
+            <p>Numer alarmowy</p>
+          </div>
+          <div class="safety-contact">
+            <strong>800 12 00 02</strong>
+            <p>Niebieska Linia (24h)</p>
+          </div>
+          <div class="safety-contact">
+            <strong>116 111</strong>
+            <p>Telefon zaufania</p>
+          </div>
+        </div>
+        <p style="margin-top: 20px; font-size: 0.95rem; font-style: italic;">Ten materiał nie zastępuje profesjonalnej pomocy w kryzysie.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Intro Section -->
+  <section class="intro">
+    <div class="container">
+      <div class="intro-content">
+        <h2>Gdy to czytasz o 3 nad ranem…</h2>
+        <div class="section-separator"></div>
+        <p>Być może chowasz się w łazience, bo czujesz napięcie. Może ktoś kontroluje finanse, zerka w telefon, podnosi głos, używa raniących słów.</p>
+        <p>Może każdego dnia słyszysz komunikaty, które podcinają skrzydła: „Jesteś bezwartościowa", „Nikt inny Cię nie zechce", „To przez Ciebie tak reaguję".</p>
+        <p>Wiem, jak to jest – też przez to przechodziłam. Część Ciebie liczy, że „tym razem będzie inaczej". A jednak serce podpowiada prawdę: to samo się nie naprawi.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Problems Section -->
+  <section class="problems">
+    <div class="container">
+      <h2>Czy znasz to uczucie?</h2>
       <div class="section-separator"></div>
-      <div class="benefits-grid">
-        <div class="benefit-item">
-          <h3>✨ 21-dniowy plan wyzwolenia</h3>
-          <p>Prowadzę Cię krok po kroku przez proces uwalniania się z toksycznego związku. Każdy dzień to nowa siła, nowa nadzieja i krok bliżej do siebie.</p>
-        </div>
-        <div class="benefit-item">
-          <h3>💜 Rozpoznawanie czerwonych flag</h3>
-          <p>Naucz się identyfikować znaki ostrzegawcze i manipulacje. Zdobędziesz narzędzia, by nigdy więcej nie wpaść w toksyczną pułapkę.</p>
-        </div>
-        <div class="benefit-item">
-          <h3>🌿 Odbudowa własnej wartości</h3>
-          <p>Odkryj, jak odzyskać poczucie własnej wartości i pewność siebie. Zasługujesz na miłość, szacunek i szczęście.</p>
-        </div>
-        <div class="benefit-item">
-          <h3>🕊️ Techniki uwalniania emocji</h3>
-          <p>Poznaj skuteczne metody przepracowywania bólu, gniewu i smutku. Pozwól sobie poczuć, aby móc się uwolnić.</p>
-        </div>
-        <div class="benefit-item">
-          <h3>💪 Strategie stawiania granic</h3>
-          <p>Naucz się mówić "nie" i chronić swoją przestrzeń emocjonalną. Granice to nie egoizm – to miłość do siebie.</p>
-        </div>
-        <div class="benefit-item">
-          <h3>🌸 Plan na nowy początek</h3>
-          <p>Otrzymasz konkretne narzędzia do budowania nowego, zdrowego życia pełnego radości, spokoju i autentyczności.</p>
-        </div>
-      </div>
+      <ul class="problems-list">
+        <li>Budząc się, zastanawiasz się, „jaki dziś będzie nastrój". Uważnie ważysz słowa.</li>
+        <li>Odsuwasz się od przyjaciółek. Nie wiesz, jak powiedzieć rodzinie, że rzeczywistość odbiega od obrazka z przeszłości.</li>
+        <li>Najtrudniejsze jest poczucie uwięzienia – widzisz wolność, ale droga wydaje się mglista.</li>
+        <li>Jeśli próbowałaś już odejść i wróciłaś – to nie znaczy, że jesteś słaba. To znaczy, że zabrakło planu i wsparcia.</li>
+      </ul>
     </div>
   </section>
 
-  <!-- Bonuses Section -->
-  <section class="bonuses">
+  <!-- Why It Didn't Work Section -->
+  <section class="why-now">
     <div class="container">
-      <h2>Ekskluzywne bonusy dla Ciebie</h2>
-      <div class="section-separator" style="background: white;"></div>
-      <p class="bonuses-subtitle">Dodatkowo otrzymasz pakiet wspierający Twoją transformację:</p>
-      
-      <div class="bonus-item">
-        <span class="bonus-value">Wartość: 97 ZŁ</span>
-        <h3>🎧 Zestaw audio-medytacji "Powrót do siebie"</h3>
-        <p>21 prowadzonych medytacji, które pomogą Ci w codziennej praktyce uważności i przepracowywaniu trudnych emocji. Każda medytacja to moment tylko dla Ciebie.</p>
-      </div>
-
-      <div class="bonus-item">
-        <span class="bonus-value">Wartość: 67 ZŁ</span>
-        <h3>📔 Dziennik emocjonalny do druku</h3>
-        <p>Pięknie zaprojektowany dziennik, który pomoże Ci śledzić postępy, zapisywać myśli i celebrować małe zwycięstwa na drodze do wolności.</p>
-      </div>
-
-      <div class="bonus-item">
-        <span class="bonus-value">Wartość: 47 ZŁ</span>
-        <h3>💝 Mini-przewodnik "Miłość do siebie"</h3>
-        <p>Praktyczny PDF z 30 sposobami na budowanie miłości własnej i samoakceptacji. Proste, codzienne rytuały, które odmienią Twoje życie.</p>
+      <div class="why-now-content">
+        <h2>Dlaczego wcześniejsze próby mogły nie zadziałać?</h2>
+        <div class="section-separator"></div>
+        <ul>
+          <li>Decyzje podejmowane w emocjach.</li>
+          <li>Brak planu bezpieczeństwa i zabezpieczenia finansowego.</li>
+          <li>Samotność i niezrozumienie otoczenia.</li>
+          <li>Nieświadomość mechanizmów manipulacji i „miodowych miesięcy".</li>
+          <li>Presja: groźby, szantaż emocjonalny, odwoływanie się do dzieci.</li>
+        </ul>
+        <p style="margin-top: 30px; font-size: 1.15rem; font-weight: 600; color: #C26A77;">Wyjście z toksycznej relacji to proces, nie impuls. Wymaga przygotowania.</p>
       </div>
     </div>
   </section>
 
-  <!-- Testimonials Section -->
+  <!-- System 21 Days -->
+  <section class="system">
+    <div class="container">
+      <h2>System 21 Dni: mapa do wolności</h2>
+      <div class="section-separator"></div>
+      <p class="system-intro">Po pracy z wieloma kobietami zauważyłam wspólną ścieżkę – trzy fazy:</p>
+      
+      <div class="phases">
+        <div class="phase">
+          <div class="phase-icon">🎯</div>
+          <h3>FAZA 1: ROZPOZNANIE (dni 1–7)</h3>
+          <p>Uważne spojrzenie na sytuację, nazwanie zachowań, zrozumienie cyklu krzywdzących wzorców i własnych barier, budowanie motywacji.</p>
+        </div>
+        
+        <div class="phase">
+          <div class="phase-icon">🛡️</div>
+          <h3>FAZA 2: BEZPIECZNE WYJŚCIE (dni 8–14)</h3>
+          <p>Plan bezpieczeństwa, sieć wsparcia, dokumenty i finanse, bezpieczne opuszczenie relacji.</p>
+        </div>
+        
+        <div class="phase">
+          <div class="phase-icon">💪</div>
+          <h3>FAZA 3: ODBUDOWA I OCHRONA (dni 15–21)</h3>
+          <p>Regulacja emocji, odbudowa poczucia własnej wartości, ochrona przed powrotem do dawnych schematów, planowanie przyszłości.</p>
+        </div>
+      </div>
+      
+      <p style="text-align: center; margin-top: 50px; font-size: 1.2rem; color: #2A2A2A; font-weight: 600;">Każdy dzień to konkretne, małe kroki. Bez chaosu.</p>
+    </div>
+  </section>
+
+  <!-- Timeline Section -->
+  <section class="timeline">
+    <div class="container">
+      <h2>Czy 21 dni wystarczy?</h2>
+      <div class="section-separator"></div>
+      <div class="timeline-content">
+        <p>21 dni to nie „pełne wyleczenie". To start:</p>
+        <ul>
+          <li>Zrozumiesz mechanizmy,</li>
+          <li>ułożysz plan,</li>
+          <li>podejmiesz działania,</li>
+          <li>znajdziesz się w bezpieczniejszym miejscu,</li>
+          <li>rozpoczniesz proces gojenia.</li>
+        </ul>
+        <p style="margin-top: 25px; font-size: 1.15rem; font-weight: 600; color: #C26A77;">Czy po 21 dniach będzie idealnie? Nie. Ale możesz być wolna – a wolność to początek wszystkiego.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
   <section class="testimonials">
     <div class="container">
-      <h2>Historie kobiet, które odzyskały wolność</h2>
-      <div class="section-separator"></div>
+      <h2>Głosy kobiet</h2>
+      <div class="section-separator" style="background: white;"></div>
       <div class="testimonials-grid">
         <div class="testimonial-item">
-          <div class="stars">★★★★★</div>
-          <p class="testimonial-text">"Ten e-book uratował mi życie. Po latach w toksycznym związku wreszcie znalazłam odwagę, by odejść. Plan 21-dniowy dał mi strukturę i wsparcie, którego tak potrzebowałam. Dziś jestem wolna i szczęśliwa."</p>
-          <p class="testimonial-author">Magdalena T.</p>
-          <p class="testimonial-role">38 lat</p>
+          <p class="testimonial-text">„6 lat życia w lęku. System 21 dni pokazał mi, jak zrobić to bezpiecznie. Dziś oddycham pełną piersią."</p>
+          <p class="testimonial-author">Anna, 34</p>
         </div>
-
+        
         <div class="testimonial-item">
-          <div class="stars">★★★★★</div>
-          <p class="testimonial-text">"Nigdy nie myślałam, że da się tak szybko odzyskać siebie. Każdy rozdział otwierał mi oczy na rzeczy, których nie dostrzegałam. Czuję się jak nowa osoba – silna, pewna siebie i gotowa na prawdziwą miłość."</p>
-          <p class="testimonial-author">Karolina W.</p>
-          <p class="testimonial-role">29 lat</p>
+          <p class="testimonial-text">„Nie potrzebowałam 'po prostu odejdź', tylko jak. Plan bezpieczeństwa naprawdę mnie ochronił."</p>
+          <p class="testimonial-author">Maja, 28</p>
         </div>
-
+        
         <div class="testimonial-item">
-          <div class="stars">★★★★★</div>
-          <p class="testimonial-text">"Medytacje i dziennik emocjonalny to skarb! Pomogły mi przepracować ból i zrozumieć, że zasługuję na więcej. Po raz pierwszy od lat czuję się naprawdę wolna. Dziękuję za ten cudowny dar."</p>
-          <p class="testimonial-author">Ania K.</p>
-          <p class="testimonial-role">42 lata</p>
+          <p class="testimonial-text">„Wracałam 4 razy. Zrozumienie cyklu i więzi traumatycznej przerwało wzorzec."</p>
+          <p class="testimonial-author">Karolina, 41</p>
+        </div>
+        
+        <div class="testimonial-item">
+          <p class="testimonial-text">„Kontrola finansowa i izolacja to też przemoc. Nazwanie rzeczy dało mi siłę działać."</p>
+          <p class="testimonial-author">Patrycja, 25</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- FAQ Section -->
-  <section class="faq">
+  <!-- What's Inside -->
+  <section class="whats-inside">
     <div class="container">
-      <h2>Najczęściej zadawane pytania</h2>
+      <h2>To nie jest 'pozytywne myślenie'. To plan.</h2>
       <div class="section-separator"></div>
-      <div class="faq-container">
-        <div class="faq-item">
-          <div class="faq-question">Czy ten e-book jest dla mnie?</div>
-          <div class="faq-answer">
-            Ten e-book jest dla każdej kobiety, która czuje, że jej związek odbiera jej energię, pewność siebie lub radość życia. Jeśli rozważasz odejście lub już podjęłaś decyzję – ta książka Ci pomoże.
-          </div>
+      <p class="whats-inside-intro">Prowadzony przez specjalistów i praktykę. W środku znajdziesz m.in.:</p>
+      
+      <div class="inside-list">
+        <div class="inside-item">
+          <p>✓ 15 czerwonych flag toksycznej relacji</p>
         </div>
-
-        <div class="faq-item">
-          <div class="faq-question">Jak szybko otrzymam dostęp?</div>
-          <div class="faq-answer">
-            Natychmiast! Po zakupie otrzymasz link do pobrania e-booka i wszystkich bonusów na swój adres e-mail. Możesz zacząć swoją drogę do wolności już za kilka minut.
-          </div>
+        <div class="inside-item">
+          <p>✓ Test poziomu ryzyka</p>
         </div>
-
-        <div class="faq-item">
-          <div class="faq-question">Czy to wymaga dużo czasu każdego dnia?</div>
-          <div class="faq-answer">
-            Nie. Plan jest elastyczny i dostosowany do Twojego tempa. Wystarczy 20-30 minut dziennie na lekturę i ćwiczenia. To czas tylko dla Ciebie – najlepsza inwestycja, jaką możesz poczynić.
-          </div>
+        <div class="inside-item">
+          <p>✓ „Anatomia" manipulacji</p>
         </div>
-
-        <div class="faq-item">
-          <div class="faq-question">Co jeśli to nie zadziała?</div>
-          <div class="faq-answer">
-            Metoda opisana w e-booku pomogła setkom kobiet. Ale jeśli z jakiegoś powodu nie będziesz zadowolona, masz 30 dni na zwrot pieniędzy – bez pytań i bez wyjaśnień.
-          </div>
+        <div class="inside-item">
+          <p>✓ Dlaczego zostajemy</p>
         </div>
-
-        <div class="faq-item">
-          <div class="faq-question">W jakim formacie otrzymam materiały?</div>
-          <div class="faq-answer">
-            E-book to PDF (możesz czytać na telefonie, tablecie lub komputerze), medytacje to pliki MP3, a dziennik to PDF do wydruku. Wszystko proste i łatwe w użyciu.
-          </div>
+        <div class="inside-item">
+          <p>✓ Wpływ na zdrowie</p>
+        </div>
+        <div class="inside-item">
+          <p>✓ Plan bezpieczeństwa krok po kroku</p>
+        </div>
+        <div class="inside-item">
+          <p>✓ Lista dokumentów i rzeczy do zabrania</p>
+        </div>
+        <div class="inside-item">
+          <p>✓ Budowanie sieci wsparcia</p>
+        </div>
+        <div class="inside-item">
+          <p>✓ Finanse i „dzień wyjścia"</p>
+        </div>
+        <div class="inside-item">
+          <p>✓ Regulacja emocji</p>
+        </div>
+        <div class="inside-item">
+          <p>✓ Wyzwalacze i odbudowa samooceny</p>
+        </div>
+        <div class="inside-item">
+          <p>✓ Ochrona przed powrotem</p>
+        </div>
+        <div class="inside-item">
+          <p>✓ Planowanie przyszłości</p>
+        </div>
+        <div class="inside-item">
+          <p>✓ Plan awaryjny</p>
+        </div>
+        <div class="inside-item">
+          <p>✓ Kontakty pomocowe</p>
+        </div>
+        <div class="inside-item">
+          <p>✓ Dziennik 21 dni</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Final CTA Section -->
-  <section class="final-cta" id="oferta">
+  <!-- Privacy Section -->
+  <section class="privacy">
     <div class="container">
-      <h2>Czas na Twoją wolność</h2>
-      <p>Rozpocznij swoją drogę do odzyskania siebie już dzisiaj</p>
-      <div class="price">47 ZŁ</div>
-      <p class="price-note">Jednorazowa płatność • Dostęp natychmiastowy • Wszystkie bonusy gratis</p>
-      <a href="#" class="cta-button">Pobierz e-book teraz</a>
-      <p style="margin-top: 40px; font-size: 1rem; font-weight: 500;">✓ Bezpieczna płatność • ✓ 30 dni gwarancji zwrotu • ✓ Dostęp na zawsze</p>
+      <h2>„A co, jeśli ktoś się dowie?"</h2>
+      <div class="section-separator"></div>
+      <div class="privacy-content">
+        <p>Priorytet: dyskrecja i bezpieczeństwo. W przewodniku:</p>
+        <ul>
+          <li>jak planować po cichu,</li>
+          <li>higiena cyfrowa (tryb incognito, czyszczenie historii),</li>
+          <li>gdzie ukryć dokumenty i gotówkę,</li>
+          <li>wiarygodne „przykrycie" pytań,</li>
+          <li>ograniczanie ryzyka śledzenia.</li>
+        </ul>
+        <p style="margin-top: 25px; font-weight: 600; color: #C26A77;">To sprawdzone, praktyczne wskazówki.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Now -->
+  <section class="why-now">
+    <div class="container">
+      <div class="why-now-content">
+        <h2>Dlaczego teraz?</h2>
+        <div class="section-separator"></div>
+        <p>Krzywdzące wzorce rzadko znikają same. Z czasem często się utrwalają. Im szybciej zaczniesz działać, tym łatwiej:</p>
+        <ul>
+          <li>odbudujesz relacje,</li>
+          <li>wrócisz do pracy i niezależności,</li>
+          <li>zaczniesz leczyć rany,</li>
+          <li>pokażesz dzieciom (jeśli je masz), jak wygląda zdrowa relacja.</li>
+        </ul>
+        <p style="margin-top: 30px; font-size: 1.15rem; font-weight: 600; color: #C26A77;">Każdy dzień działania przybliża do wolności.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section class="pricing" id="oferta">
+    <div class="container">
+      <h2>Cena vs wartość</h2>
+      <div class="section-separator" style="background: white;"></div>
+      <p class="pricing-intro">Za podobne wsparcie płaci się zwykle setki złotych (terapia, konsultacje, poradnie).<br>Tutaj cały System 21 Dni kosztuje:</p>
+      
+      <div class="price-box">
+        <div class="old-price">197 zł</div>
+        <div class="new-price">47 zł</div>
+        
+        <div class="timer-warning">
+          ⚠️ Pozostało <strong>12 egzemplarzy</strong> w tej cenie
+          <div id="countdown"></div>
+        </div>
+        
+        <a href="#" class="cta-button" aria-label="Zamów System 21 Dni teraz za 47 złotych" style="margin-top: 20px;">Kup teraz za 47 zł</a>
+        
+        <div class="guarantee">
+          <p><strong>A jeśli się nie uda?</strong></p>
+          <p>Masz 30-dniową gwarancję satysfakcji. Jeśli przejdziesz system i nie zobaczysz poprawy – zwrócę pieniądze.</p>
+          <p style="margin-top: 15px; font-style: italic;">47 zł to mniej niż codzienne zakupy. A Twoje bezpieczeństwo i spokój? Bezcenne.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- For Whom -->
+  <section class="for-whom">
+    <div class="container">
+      <h2>Dla kogo?</h2>
+      <div class="section-separator"></div>
+      
+      <div class="for-whom-grid">
+        <div class="for-whom-box for-yes">
+          <h3>DLA CIEBIE, jeśli:</h3>
+          <ul>
+            <li>wiesz, że zasługujesz na szacunek,</li>
+            <li>chcesz działać konkretnie i bezpiecznie,</li>
+            <li>szukasz planu, nie tylko otuchy.</li>
+          </ul>
+        </div>
+        
+        <div class="for-whom-box for-no">
+          <h3>Nie dla Ciebie, jeśli:</h3>
+          <ul>
+            <li>szukasz „magii bez wysiłku",</li>
+            <li>liczysz, że druga osoba zmieni się bez pracy,</li>
+            <li>chcesz tylko usłyszeć „nie jest tak źle".</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Future Scenarios -->
+  <section class="future">
+    <div class="container">
+      <h2>Za rok…</h2>
+      <div class="section-separator"></div>
+      
+      <div class="scenarios">
+        <div class="scenario scenario-1">
+          <h3>Scenariusz 1:</h3>
+          <p>Nic się nie zmienia. Ciągły stres, tłumaczenia, gaszenie pożarów.</p>
+        </div>
+        
+        <div class="scenario scenario-2">
+          <h3>Scenariusz 2:</h3>
+          <p>Działasz. Mieszkasz bezpiecznie, decydujesz o sobie, budzisz się bez lęku.</p>
+          <p style="margin-top: 15px; font-weight: 600; color: #6D7A59;">Który wybierasz?</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="final-cta">
+    <div class="container">
+      <h2>Ostatnie słowo</h2>
+      <div class="section-separator" style="background: white;"></div>
+      <p>Nie mówię, że będzie łatwo. Mówię, że będzie warte. I że nie jesteś w tym sama. Ten przewodnik to plan, którym poszły już tysiące kobiet.</p>
+      
+      <div class="cta-features">
+        <div class="cta-feature">
+          <strong>✅</strong>
+          <p>Natychmiastowy dostęp<br>(w kilka minut)</p>
+        </div>
+        <div class="cta-feature">
+          <strong>✅</strong>
+          <p>System 21 dni<br>krok po kroku</p>
+        </div>
+        <div class="cta-feature">
+          <strong>✅</strong>
+          <p>Gwarancja<br>30 dni</p>
+        </div>
+        <div class="cta-feature">
+          <strong>✅</strong>
+          <p>Dyskrecja<br>i bezpieczeństwo</p>
+        </div>
+      </div>
+      
+      <a href="#" class="cta-button" aria-label="Zamów System 21 Dni za 47 złotych" style="font-size: 1.4rem; padding: 22px 60px;">🎯 Zamów teraz — 47 zł zamiast 197 zł</a>
+      
+      <p style="margin-top: 40px; font-size: 1.1rem; font-style: italic;">PS. Odwaga to nie brak strachu — to działanie pomimo strachu. Ten krok już robisz.</p>
     </div>
   </section>
 
   <!-- Footer -->
   <footer>
     <div class="container">
-      <p>&copy; 2025 Wolna w 21 dni | Wszystkie prawa zastrzeżone</p>
+      <p>&copy; 2025 wolnaw21dni.pl | Wszystkie prawa zastrzeżone</p>
       <p style="margin-top: 12px;">Polityka prywatności • Regulamin</p>
+      <p class="disclaimer">Materiał nie zastępuje profesjonalnej pomocy medycznej, psychologicznej ani prawnej. W sytuacji zagrożenia dzwoń 112.</p>
     </div>
   </footer>
+
+  <script>
+    // Countdown Timer
+    const countdownDate = new Date();
+    countdownDate.setHours(countdownDate.getHours() + 24); // 24 godziny od teraz
+
+    const countdownElement = document.getElementById('countdown');
+
+    function updateCountdown() {
+      const now = new Date().getTime();
+      const distance = countdownDate - now;
+
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      countdownElement.innerHTML = `Promocja kończy się za: ${hours}h ${minutes}m ${seconds}s`;
+
+      if (distance < 0) {
+        countdownElement.innerHTML = "Promocja zakończona";
+      }
+    }
+
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+  </script>
 </body>
 </html>
